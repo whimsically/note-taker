@@ -14,14 +14,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/api', api);
 
-//index page
-app.get('/*', (req, res) =>
-  res.sendFile(path.join(__dirname, '/public/index.html'))
-);
-
 // /notes page
 app.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/notes.html'))
+);
+
+//index page
+app.get('/*', (req, res) =>
+  res.sendFile(path.join(__dirname, '/public/index.html'))
 );
 
 app.listen(PORT, () =>
