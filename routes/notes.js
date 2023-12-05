@@ -1,11 +1,11 @@
-const api = require('express').Router();
+const notes = require('express').Router();
 const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
 const { readAndAppend } = require('../helpers/fsUtils');
 
 //api GET
 //reads db.json
-api.get('/notes', (req, res) => {
+notes.get('/', (req, res) => {
     fs.readFile('./db/db.json', 'utf8', (err, data) => {
         if (err) {
           console.error(err);
@@ -17,7 +17,7 @@ api.get('/notes', (req, res) => {
 });
 
 //api POST
-api.post('/notes', (req, res) => {
+notes.post('/', (req, res) => {
     const { title, text } = req.body;
 
     if (title && text) {
@@ -36,4 +36,4 @@ api.post('/notes', (req, res) => {
 
 //TODO: api DELETE
 
-module.exports = api;
+module.exports = notes;
