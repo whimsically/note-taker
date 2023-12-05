@@ -5,7 +5,7 @@ const { readAndAppend } = require('../helpers/fsUtils');
 
 //api GET
 //reads db.json
-api.get('/', (req, res) => {
+api.get('/notes', (req, res) => {
     fs.readFile('./db/db.json', 'utf8', (err, data) => {
         if (err) {
           console.error(err);
@@ -17,7 +17,7 @@ api.get('/', (req, res) => {
 });
 
 //api POST
-api.post('/', (req, res) => {
+api.post('/notes', (req, res) => {
     const { title, text } = req.body;
 
     if (title && text) {
