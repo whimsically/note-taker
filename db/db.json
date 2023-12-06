@@ -2,26 +2,6 @@
     {
         "title": "Test Title",
         "text": "Test note",
-        "note_id": "dd350ab6-a039-413a-94cc-71b3da2cf9c4"
-    },
-    {
-        "title": "title",
-        "text": "topic",
-        "note_id": "3049d079-168b-46f6-9d77-8148c8cc209d"
-    },
-    {
-        "title": "title",
-        "text": "topic",
-        "note_id": "1b94d61d-9fe1-4e99-8768-9613f18f3532"
-    },
-    {
-        "title": "title",
-        "text": "topic",
-        "note_id": "985b9636-4a7d-419f-9624-4e9f90293469"
-    },
-    {
-        "title": "title",
-        "text": "topic",
-        "note_id": "3c1d48d1-027e-450e-8781-6d6b127105df"
+        "id": "dd350ab6-a039-413a-94cc-71b3da2cf9c4"
     }
 ]
