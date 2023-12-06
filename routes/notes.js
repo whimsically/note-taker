@@ -36,4 +36,8 @@ notes.post('/', (req, res) => {
 
 //TODO: api DELETE
 
+//notes.delete('/'), (req, res) => {
+
+//}
+
 module.exports = notes;
